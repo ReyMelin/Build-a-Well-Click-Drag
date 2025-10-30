@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Build a Well — Starter</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <h1>Build a Well</h1>
+      <p class="tag">Minimal starter — semantic, modular, responsive</p>
+    </div>
+  </header>
+
+  <main class="wrap layout">
+    <section id="game-area" class="game-area" aria-label="Game area">
+      <div id="wellCanvas" class="well-canvas" role="img" aria-label="Well area">
+        <!-- Game rendering surface. Use JS to draw/attach canvas/SVG here. -->
+        <div class="placeholder">Your well goes here</div>
+      </div>
+    </section>
+
+    <aside id="controls" class="sidebar" aria-label="Game controls">
+      <h2>Controls</h2>
+      <div class="controls-grid" role="toolbar" aria-label="Game actions">
+        <button id="btn-dig" class="btn">Dig</button>
+        <button id="btn-water" class="btn">Add Water</button>
+        <button id="btn-reset" class="btn">Reset</button>
+      </div>
+
+      <section class="stats" aria-live="polite">
+        <h3>Progress</h3>
+        <p><strong><span id="progress">0%</span></strong></p>
+      </section>
+    </aside>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <small>Made for learning — expand as needed.</small>
+    </div>
+  </footer>
+
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>
